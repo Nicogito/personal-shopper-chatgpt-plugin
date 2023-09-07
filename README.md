@@ -1,2 +1,2 @@
 # clothes-api
-This is a Flask API which get clothes
+This is a ChatGPT plugin which act as a Personal shopper

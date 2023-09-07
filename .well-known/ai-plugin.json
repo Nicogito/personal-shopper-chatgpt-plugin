@@ -1,0 +1,18 @@
+{
+    "schema_version": "v1",
+    "name_for_human": "Clothes Finder",
+    "name_for_model": "clothes-finder",
+    "description_for_human": "Find your suitable clothes depending your needs",
+    "description_for_model": "Help the user with finding suitable clothes depending his needs. You can get all products matching a specific category and audience.",
+
+    "auth": {
+        "type": "none"
+    },
+    "api": {
+        "type": "openapi",
+        "url": "http://localhost:8080/openapi.yaml"
+    },
+    "logo_url": "http://localhost:8080/logo.png",
+    "contact_email": "support@example.com",
+    "legal_info_url": "http://www.example.com/legal"
+}

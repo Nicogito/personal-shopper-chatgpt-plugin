@@ -1,0 +1,28 @@
+openapi: 3.0.1
+info:
+  title: Clothes Finder Plugin
+  description: A plugin that allows the user to find suitable clothes depending his needs.
+  version: 'v1'
+servers:
+  - url: http://localhost:8080
+paths:
+  /items:
+    get:
+      operationId: getItems
+      summary: Get the list of items with a specific category and destined to a specific audience
+      parameters:
+          - in: query
+            name: category
+            required: true
+            schema:
+                type: string
+            description: Used to filter items based on a category. For example, ?category=short will return all the items with type short.
+          - in: query
+            name: audience
+            required: true
+            schema:
+                type: string
+            description: Used to filter items based on a audience. For example, ?audience=homme will return all the items destined to men.
+      responses:
+        "200":
+          description: OK
